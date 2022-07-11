@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<title>Weather App</title>
+</head>
+<body>
+    <div class="container-md">
+        <h1>Open Weather API APP</h1>
+        <!-- Input form -->
+        <form>
+            <div class="form-group">
+                <label for="Input City and Country Code" id="form-text">Enter City and Country Code </label>
+                <input type="text" class="city_country_text" id="City-Country-Code"  placeholder="City,Country Code">
+            <button type="submit" class="btn btn-warning" id="get-weather-btn">Get Weather</button>
+        </form>
+    </div>
+    <!-- Weather data -->
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="open weather api icon">
+        <div class="card-body">
+            <p class="name"></p>
+            <p class="card-text-high"></p>
+            <p class="card-text-low"></p>
+            <p class="card-text-humidity"></p>
+            <p class="card-text-weather-des"></p>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>

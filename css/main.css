@@ -1,0 +1,15 @@
+#form-text{
+    color: white;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 255, 255, 0.281);
+    border-radius: 10% / 50%;
+}
+body{
+    background-image: url(/weather_icons/Weather-Images-HD.jpg);
+ 
+    background-position: center;
+}
