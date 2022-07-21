@@ -16,17 +16,23 @@
 </head>
 <body>
     <div class="container-md">
+        <video autoplay muted loop id="myVideo">
+            <source src="/weather_icons/rain.mp4" type="video/mp4">
+        </video>
+        <div class="weatherbanner"> 
         <h1>Open Weather API APP</h1>
         <!-- Input form -->
         <form>
             <div class="form-group">
                 <label for="Input City and Country Code" id="form-text">Enter City and Country Code </label>
                 <input type="text" class="city_country_text" id="City-Country-Code"  placeholder="City,Country Code">
-            <button type="submit" class="btn btn-warning" id="get-weather-btn">Get Weather</button>
+            <button type="submit" class="btn btn-warning" id="getweatherbtn">Get Weather</button>
         </form>
-    </div>
+
+    <!-- </div> -->
     <!-- Weather data -->
     <div class="card" style="width: 18rem;">
+
         <img src="..." class="card-img-top" alt="open weather api icon">
         <div class="card-body">
             <p class="name"></p>
@@ -36,6 +42,8 @@
             <p class="card-text-weather-des"></p>
         </div>
     </div>
+    </div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 <script src="/js/main.js"></script>

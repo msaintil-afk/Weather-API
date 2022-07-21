@@ -10,8 +10,8 @@ let city_name = document.querySelector('.name')
 // let weatherdisplayicon = document.querySelector(".card-img-top").src ="https://openweathermap.org/img/wn/" +weathericon+ ".png";
 
 //Button query selection and function to get weather api data with promises \\
-get_weather_button = document.getElementById("get-weather-btn").addEventListener('click', function(name){
-    fetch('https://api.openweathermap.org/data/2.5/weather?q='+city_input.value+'&appid=f47713e7f80e74c1ca57bf73cdf2010e')
+get_weather_button = document.getElementById("getweatherbtn").addEventListener('click', function(name){
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city_input.value + '&appid=f47713e7f80e74c1ca57bf73cdf2010e')
     .then(response => response.json())
     .then(data => {
         let hightempValue = data['main']['temp_max'];
@@ -28,7 +28,7 @@ get_weather_button = document.getElementById("get-weather-btn").addEventListener
         // weatherdisplayicon.innerHTML = weathericon;
 
 })
-
+console.log(data)
 .catch(err => alert("Wrong city name! Please make sure correct format is entered"));
 })
 
